@@ -9,7 +9,7 @@ export const jokeArray = [
   },
   {
     joke: "Why do astronomers hate Orion's Belt?",
-    punchline: "Cause it's a big waste of space!",
+    punchline: "Cause it's a big waist of space!",
   },
   {
     joke: "What do you call a mouse that swears a lot?",
