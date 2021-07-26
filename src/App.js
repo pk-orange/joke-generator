@@ -14,14 +14,13 @@ function App() {
     buttonDisplay: 'block',
   }
  
-  console.log(jokeArray);
 
   const [lineIndex, setLineIndex] = useState(0);
   const [punchLineDisplay, setPunchLineDisplay] = useState(false);
   const [punchLineData, setPunchLineData] = useState({...punchLineState})
 
   function cycle() {
-    if (lineIndex <= 4) {
+    if (lineIndex < jokeArray.length) {
       setLineIndex((index) => index + 1);
       setPunchLineData({ ...punchLineState })
     }
