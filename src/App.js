@@ -14,6 +14,7 @@ function App() {
     buttonDisplay: 'block',
   }
  
+  console.log(jokeArray);
 
   const [lineIndex, setLineIndex] = useState(0);
   const [punchLineDisplay, setPunchLineDisplay] = useState(false);
