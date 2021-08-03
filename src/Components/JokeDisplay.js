@@ -76,7 +76,7 @@ function Joke({
 
   // let pending =
   //     punchLineDisplay ? 'block' : 'none';
-if(lineIndex <= joke.array.length - 1) {
+if(lineIndex <= jokeArray.length - 1) {
   return (
     <>
       <section class="container w-25">
