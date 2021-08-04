@@ -1,61 +1,4 @@
-export const jokeArray = [
-  {
-    joke: "Why does 'Where's Waldo' only wear stripes?",
-    punchline: "Cause he didn't want to be spotted!",
-  },
-  {
-    joke: "Who designed King Arthur's round table?",
-    punchline: "Sir-Cumference",
-  },
-  {
-    joke: "Why do astronomers hate Orion's Belt?",
-    punchline: "Cause it's a big waist of space!",
-  },
-  {
-    joke: "What do you call a mouse that swears a lot?",
-    punchline: "A cursor!",
-  },
-  {
-    joke: "What was the pig doing in the kitchen?",
-    punchline: "Bacon!",
-  },
-  {
-    joke: "Why was the strawberry late for work?",
-    punchline: "It was stuck in a jam!",
-  },
-   {
-    joke: "[“hip”,”hip”]",
-    punchline: "hip hip array!",
-  },
-   {
-    joke: "How did pirates collaborate before computers?",
-    punchline: "Pier to pier networking",
-  },
-   {
-    joke: "I’m starting a band called HTML Encoder...",
-    punchline: "Looking to buy a guitar & amp",
-  },
-   {
-    joke: "As a programmer, when I feel the void...",
-    punchline: "And I know I’ve reached the point of no return",
-  },
-   {
-    joke: "Why did the functions stop calling each other?",
-    punchline: "Because they had constant arguments",
-  },
-   {
-    joke: "Why don’t bachelors like Git?",
-    punchline: "Because they are afraid to commit.",
-  },
-   {
-    joke: "My girlfriend is the root of -100",
-    punchline: "A solid 10 but also imaginary"
-  },
-      {
-    joke: "My girlfriend is the root of -100",
-    punchline: "A solid 10 but also imaginary"
-  },
-];
+import { jokeArray } from "./data/jokeData";
 
 function Joke({
   cycle,
@@ -70,61 +13,65 @@ function Joke({
 
   const singleJokeLine = jokeOutput.joke;
   const singlePunchLine = jokeOutput.punchline;
-    
+
   function stopAtEnd() {
     return lineIndex === jokeArray.length - 1;
   }
-    
-  let last = stopAtEnd ? "Next joke!" : "That's all folks!";
 
+  let last = stopAtEnd ? "NEXT JOKE!" : "That's all folks!";
 
   // let pending =
   //     punchLineDisplay ? 'block' : 'none';
   if (lineIndex < jokeArray.length - 1) {
     return (
       <>
-        <section class="container w-25">
-          <div class="pt-5">
-            <h4 class="text-center font-weight-bold">{singleJokeLine}</h4>
-          </div>
-          <div class="d-flex flex-column align-middle">
-            <h3 class="text-center text-success mt-2" style={{ display: displayText }}>{singlePunchLine}</h3>
+        <div class="d-flex justify-content-center">
+        <div class="card border-dark bg-dark text-center w-50 rounded">
+          <div class="card-header mb-5 h1 bg-dark text-white-50"><strong>Dad Jokes</strong></div>
+          <div class="card-body bg-dark">
+            <h2 class="card-title mb-4 text-white">{singleJokeLine}</h2>
+            <h3 class="card-text text-info mb-5" style={{ display: displayText }}>
+              <strong>{singlePunchLine}</strong>
+            </h3>
+            <div class="d-grid gap-2 col-6 mx-auto">
+
+            
             <button
               type="button"
-              class="btn btn-secondary"
+              class="btn btn-info text-dark"
               style={{ display: buttonDisplay }}
               onClick={showPunchLine}
             >
-              PUNCH LINE
-          </button>
-          </div>
-          <div class="d-flex flex-column mt-3">
+              <strong>PUNCH LINE</strong>
+            </button>
+
             <button
               type="button"
-              class="btn btn-secondary"
+              class="btn btn-info"
               style={{ display: displayText }}
               onClick={cycle}
             >
-              {last}
-            </button>
+                  <strong>{last}</strong>
+              </button>
+              </div>
           </div>
-        </section>
+          <div class="card-footer text-muted">"A joke becomes a dad joke... when it's apparent!"</div>
+        </div>
+
+
+
+     
+          </div>
       </>
     );
   } else {
     return (
-       
       <div class="d-flex flex-column mt-3">
-        <button
-          type="button"
-          class="btn btn-secondary"
-          disable={true}
-        >
+        <button type="button" class="btn btn-secondary" disable={true}>
           {`That's all folks!`}
         </button>
       </div>
-    )
-  
+    );
   }
 }
 

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Header from "./Components/Header";
 import Joke from "./Components/JokeDisplay";
 import Buttons from "./Components/Buttons";
-import { jokeArray } from "./Components/JokeDisplay";
+import { jokeArray } from "./Components/data/jokeData";
 
 
 
@@ -34,6 +34,7 @@ function App() {
 
   return (
     <>
+      
       <Header />
       <Joke
         lineIndex={lineIndex}
