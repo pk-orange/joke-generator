@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/dad-joke-prac/static/css/main.a617e044.chunk.css",
-    "main.js": "/dad-joke-prac/static/js/main.1ea0b0a7.chunk.js",
-    "main.js.map": "/dad-joke-prac/static/js/main.1ea0b0a7.chunk.js.map",
-    "runtime-main.js": "/dad-joke-prac/static/js/runtime-main.8bba7412.js",
-    "runtime-main.js.map": "/dad-joke-prac/static/js/runtime-main.8bba7412.js.map",
-    "static/js/2.81ad0c51.chunk.js": "/dad-joke-prac/static/js/2.81ad0c51.chunk.js",
-    "static/js/2.81ad0c51.chunk.js.map": "/dad-joke-prac/static/js/2.81ad0c51.chunk.js.map",
-    "index.html": "/dad-joke-prac/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/dad-joke-prac/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.81ad0c51.chunk.js.LICENSE.txt": "/dad-joke-prac/static/js/2.81ad0c51.chunk.js.LICENSE.txt"
+    "main.css": "/joke-generator/static/css/main.a617e044.chunk.css",
+    "main.js": "/joke-generator/static/js/main.1ea0b0a7.chunk.js",
+    "main.js.map": "/joke-generator/static/js/main.1ea0b0a7.chunk.js.map",
+    "runtime-main.js": "/joke-generator/static/js/runtime-main.64a4cd57.js",
+    "runtime-main.js.map": "/joke-generator/static/js/runtime-main.64a4cd57.js.map",
+    "static/js/2.81ad0c51.chunk.js": "/joke-generator/static/js/2.81ad0c51.chunk.js",
+    "static/js/2.81ad0c51.chunk.js.map": "/joke-generator/static/js/2.81ad0c51.chunk.js.map",
+    "index.html": "/joke-generator/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/joke-generator/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.81ad0c51.chunk.js.LICENSE.txt": "/joke-generator/static/js/2.81ad0c51.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.8bba7412.js",
+    "static/js/runtime-main.64a4cd57.js",
     "static/js/2.81ad0c51.chunk.js",
     "static/css/main.a617e044.chunk.css",
     "static/js/main.1ea0b0a7.chunk.js"
